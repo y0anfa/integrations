@@ -1,0 +1,89 @@
+- name: gitlab.id
+  title: ID
+  type: keyword
+  description: |
+    The identifier of the GitLab Audit Event.
+- name: gitlab.author_id
+  title: Author ID
+  type: keyword
+  description: |
+    Identifier of the author.
+- name: gitlab.entity_id
+  title: Entity ID
+  type: keyword
+  description: |
+    Identifier of the entity.
+- name: gitlab.entity_type
+  title: Entity Type
+  type: keyword
+  description: |
+    Type of the entity.
+- name: gitlab.details
+  title: Details
+  type: group
+  fields:
+    - name: change
+      title: Change
+      type: keyword
+      description: |
+        Parameter changed in the event.
+    - name: from
+      title: From
+      type: keyword
+      description: |
+        Last value of the parameter.
+    - name: to
+      title: To
+      type: keyword
+      description: |
+        New value of the parameter.
+    - name: add
+      title: Add
+      type: keyword
+      description: |
+        Value added.
+    - name: author_name
+      title: Author Name
+      type: keyword
+      description: |
+        Name of the author.
+    - name: author_email
+      title: Author Email
+      type: keyword
+      description: |
+        Email of the author.
+    - name: custom_message
+      title: Custom Message
+      type: keyword
+      description: |
+        Custom message of the audit event.
+    - name: target_id
+      title: Target ID
+      type: keyword
+      description: |
+        Identifier of the target.
+    - name: target_type
+      title: Target Type
+      type: keyword
+      description: |
+        Type of the target
+    - name: target_details
+      title: Target Details
+      type: keyword
+      description: |
+        Details of the target.
+    - name: ip_address
+      title: IP address
+      type: ip
+      description: |
+        IP address of the author.
+    - name: entity_path
+      title: Entity Path
+      type: keyword
+      description: |
+        Path of the entity.
+- name: gitlab.created_at
+  title: Created At
+  type: date
+  description: |
+    The date the audit event occurred in ISO 8601 format.
