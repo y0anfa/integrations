@@ -1,24 +1,25 @@
+format_version: 2.8.0
 name: gitlab
-title: GitLab
-version: "0.1.0"
-release: ga
-description: Collect and parse audit events from GitLab API with Elastic Agent.
+title: "GitLab Audit Events"
+version: 0.0.1
+description: "This package logs GitLab Audit Events through the GitLab API."
 type: integration
-format_version: 0.1.0
-license: basic
-categories: [security, audit]
+categories:
+  - custom
+  - security
 conditions:
-  kibana.version: ^8.7.1
-icons:
-  - src: /img/okta-logo.svg
-    title: Okta
-    size: 216x216
-    type: image/svg+xml
+  kibana.version: "^8.4.2"
+  elastic.subscription: "basic"
 screenshots:
-  - src: /img/filebeat-okta-dashboard.png
-    title: Okta Dashboard
-    size: 1024x662
+  - src: /img/sample-screenshot.png
+    title: Sample screenshot
+    size: 600x600
     type: image/png
+icons:
+  - src: /img/sample-logo.svg
+    title: Sample logo
+    size: 32x32
+    type: image/svg+xml
 policy_templates:
   - name: gitlab
     title: GitLab events
@@ -78,7 +79,7 @@ policy_templates:
             required: false
             show_user: false
             description: URL to proxy connections in the form of http\[s\]://<user>:<password>@<server name/ip>:<port>
-        title: "Collect GitLab events via API"
-        description: "Collecting events from GitLab via API"
+        title: Collect GitLab events via API
+        description: Collecting events from GitLab via API
 owner:
-  github: elastic/security-external-integrations
+  github: elastic/integrations
