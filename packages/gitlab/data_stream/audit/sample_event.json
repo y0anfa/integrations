@@ -1,0 +1,17 @@
+{
+  "author_id": 1,
+  "created_at": "2023-06-08T14:02:40.762Z",
+  "details": {
+    "author_email": "author@example.com",
+    "author_name": "Author Name",
+    "custom_message": "Export file download started",
+    "entity_path": "group/project",
+    "ip_address": "8.8.8.8",
+    "target_details": "group/project",
+    "target_id": 2,
+    "target_type": "Project"
+  },
+  "entity_id": 2,
+  "entity_type": "Project",
+  "id": 1234
+}
